@@ -5,12 +5,12 @@ function App() {
   const user = {
     name: 'Hedy Lamarr',
     imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-    imageSize: 1,
+    imageSize: 91,
   }
 
   return (
     <>
-      {user.imageSize > 90 ? (
+      {user.imageSize > 90 && (
         <>
           <h1> hello will show image</h1>
           <img
@@ -22,11 +22,6 @@ function App() {
               border: '2px solid black',
             }}
           />
-        </>
-      ) : (
-        <>
-          <h1> hello </h1>
-          <h3> I will not show image just the message </h3>
         </>
       )}
     </>
